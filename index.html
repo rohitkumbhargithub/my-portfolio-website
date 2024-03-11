@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rohit Kumbhar</title>
+    <link rel="icon" href="https://icon-library.com/images/icon-portfolio/icon-portfolio-16.jpg">
+
+    <!-- swipper-classes -->
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <!-- box-icon -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="loader"></div>
+    <header class="header">
+        <a href="" class="logo">Portfolio</a>
+
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <div id="darkMode"></div>
+        <div class='bx bx-menu' id="menu-icon"></div>
+    </header>
+
+
+    <!-- home section -->
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hello, I'm</h3>
+            <h1>Rohit Kumbhar</h1>
+            <p>I am eager to leverage my skills
+                to contribute to innovative web projects.</p>
+
+            <div class="social-media">
+                <a href="https://x.com/RohitKumbhar956?t=YiCYfMyzmL_k-JFdzfJOhw&s=09" target="_blank"><i class='bx bxl-twitter'></i></a>
+                <a href="https://github.com/rohitkumbhargithub" target="_blank"><i class='bx bxl-github' ></i></a>
+                <a href="https://www.linkedin.com/in/rohit-kumbhar-006464232/" target="_blank"><i class='bx bxl-linkedin-square' ></i></a>
+                <a href="https://www.youtube.com/@TheTech_KR" target="_blank"><i class='bx bxl-youtube' ></i></a>
+            </div>
+
+            <a href="/assets/Rohit Resume (2).pdf" download="" class="btn" >Download CV</a>
+        </div>
+
+        <div class="profession-container">
+            <div class="overlay"></div>
+        </div>
+
+        <div class="home-img">
+            <img src="./assets/Programmer-rafiki (2).png" alt="">
+        </div>
+
+    </section>
+
+    <!-- about section -->
+    <section class="about" id="about">
+        <h2 class="heading">About <span>Me</span></h2>
+        <div class="about-container">
+            <div class="about-content">
+                <div class="about-img">
+                    <img src="./assets/rkk.png" alt="">
+                </div>
+                <h3>Hi, I'm helper your next Project!</h3>
+                <p>Enthusiastic about pursuing opportunities as a MERN stack web developer, concepts and technologies acquired through HTML, CSS, JavaScript and the MERN stack.</p>
+            </div>
+            <div class="about-brief">
+                <div class="about-heading" >
+                    <span class="tab-links active"  onclick="opentab('tech')">Tech Stack</span>
+                    <span class="tab-links"  onclick="opentab('intership')">Intership</span>
+                    <span class="tab-links"  onclick="opentab('education')">Education</span>
+                    <span class="tab-links"  onclick="opentab('online')">Online Education</span>
+                </div>
+                <div class="tab-contents active-tab" id="tech">
+                    <ul>
+                        <li><span>Frontend Developer</span><br> HTML, CSS, JavaScript, React.JS</li>
+                        <li><span>API Developer</span><br> Node.Js, Express.js</li>
+                        <li><span>Database Developer</span><br> MySQL, MongoDB</li>
+                        <li><span>Backend Developer</span><br> Java, Python</li>
+                        
+                    </ul>
+                </div>
+                <div class="tab-contents " id="intership">
+                    <ul>
+                        <li><span>Full Stack web developer</span><br>Ei-System Madhya paradesh <small>-Reomte, Feb 2024 - Present</small> </li><br><br>
+
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>MCA 2021-2023</span><br> from D.Y.Patil Agriculture And Technical University,Talasande, Kolhapur Maharashtra.
+                        </li>
+                        <li><span>BSC 2018-2021</span><br> from Shivaji University, Kolhapur Maharashtra</li>
+
+                    </ul>
+                </div>
+                <div class="tab-contents" id="online">
+                    <ul>
+                        <li><span>Full Stack Web developement</span><br> Coding Ninjas
+                        </li>
+                        <li><span>Python Fundamentals</span><br> Infosys Springboard</li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="services" id="services">
+        <h2 class="heading">My <span>Services</span></h2>
+
+        <div class="services-container">
+            <div class="services-box">
+                <i class='bx bx-code-alt'></i>
+                <h3>Web development</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. A distinctio sit repudiandae iure magnam, laudantium expedita incidunt dignissimos eligendi 
+                    accusamus molestias vitae at dolore facilis libero veritatis provident voluptatem! Repellat.</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+            <div class="services-box">
+                <i class='bx bx-code-alt'></i>
+                <h3>Web development</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. A distinctio sit repudiandae iure magnam, laudantium expedita incidunt dignissimos eligendi 
+                    accusamus molestias vitae at dolore facilis libero veritatis provident voluptatem! Repellat.</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+            <div class="services-box">
+                <i class='bx bx-code-alt'></i>
+                <h3>Web development</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. A distinctio sit repudiandae iure magnam, laudantium expedita incidunt dignissimos eligendi 
+                    accusamus molestias vitae at dolore facilis libero veritatis provident voluptatem! Repellat.</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio section -->
+    <section class="portfolio" id="projects">
+        <h2 class="heading">Latest <span>Project</span></h2>
+
+        <div class="portfolio-container">
+            <div class="portfolio-box">
+                <img src="./assets/5356426.png" alt="">
+                <div class="portfolio-layer">
+                    <h4>SendChat App</h4>
+                    <p>Developed the chat web application using React JS,
+                        Vite, and Node JS. Designed by Tailwind css</p>
+                         <a href="https://send-chat-prod.onrender.com/" target="_blank"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="./assets/question-mark-icon-sign-3d-png.png" alt="">
+                <div class="portfolio-layer">
+                    <h4>Quzify App</h4>
+                    <p>Implemented ReactJS for user interface.
+                        Enabled a sound effect, a use-sound library, when an
+                        answer is wrong or right in the quiz app.
+                        Executed a timer for each question with limited timing.</p>
+                         <a href="https://flashquiz-prod.onrender.com/" target="_blank"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- Contact section  -->
+
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me!</span></h2>
+
+        <form action="#">
+            <div class="input-box">
+                <input type="text" placeholder="Full name">
+                <input type="email" placeholder="email address">
+            </div>
+            <div class="input-box">
+                <input type="number" placeholder="Mobile no">
+                <input type="text" placeholder="Subject">
+            </div>
+            <textarea name="" id="" cols="30" rows="5" placeholder="Your Messsage"></textarea>
+            <input type="submit" value="Send Messsage" class="btn"> 
+        </form>
+    </section>
+
+    <!-- footer design -->
+    <footer class="footer">
+        <div class="footer-text">
+            <p><span><marquee
+                direction="left"
+                loop="">Thank You For Visting!😊</marquee></span>Copyright &copy; 2024 by Rohit | All rights Reserverd. </p>
+        </div>
+        <div class="footer-iconTop">
+            <a href="#home"><i class='bx bxs-up-arrow-square'></i></a>
+        </div>
+    </footer>
+
+    <!-- scroll reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- swiper js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script type="text/javascript" src="./script.js"></script>
+</body>
+</html>

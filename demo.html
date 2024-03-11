@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>display</title>
+</head>
+
+<style>
+    .info{
+        display: flex;
+    }
+    .diva{
+        display: block;
+        background-color: aqua;
+    }
+    .divb{
+        display: none;
+        background-color: red;
+
+    }
+</style>
+<body>
+    
+
+    <div class="buttons">
+        <button id="tech">TEch</button>
+        <button id="intership">Intership</button>
+    </div>
+
+    <div class="info">
+        <div class="diva" id="diva">
+            <p>abcde</p>
+        </div>
+        <div class="divb" id="divb">
+            <p>abcdefg</p>
+        </div>
+
+    </div>
+
+    <script>
+        const btn_tech = document.getElementById("tech");
+        const btn_intership = document.getElementById("intership");
+        const diva = document.getElementById('diva');
+        const divb = document.getElementById('divb');
+
+        btn_tech.addEventListener('click', () => {
+            diva.style.display = "block"
+            divb.style.display = "none"
+        })
+
+        btn_intership.addEventListener('click', () => {
+            diva.style.display = "none"
+            divb.style.display = "block"
+        })
+    </script>
+
+</body>
+</html>
