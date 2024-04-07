@@ -18,7 +18,9 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <div class="loader"></div>
+    <div class="loader">
+        <p>Please Wait..!</p>
+    </div>
     <header class="header">
         <a href="" class="logo">Portfolio</a>
 
@@ -72,7 +74,7 @@
                     <img src="./assets/rkk.png" alt="">
                 </div>
                 <h3>Hi, I'm helper your next Project!</h3>
-                <p>Enthusiastic about pursuing opportunities as a MERN stack web developer, concepts and technologies acquired through HTML, CSS, JavaScript and the MERN stack.</p>
+                <p>Enthusiastic about pursuing opportunities as a MERN stack web developer, concepts and technologies acquired through HTML, CSS, JavaScript and the MERN stack.</p>
             </div>
             <div class="about-brief">
                 <div class="about-heading" >
@@ -123,24 +125,32 @@
         <div class="services-container">
             <div class="services-box">
                 <i class='bx bx-code-alt'></i>
-                <h3>Web development</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. A distinctio sit repudiandae iure magnam, laudantium expedita incidunt dignissimos eligendi 
-                    accusamus molestias vitae at dolore facilis libero veritatis provident voluptatem! Repellat.</p>
-                <a href="#" class="btn">Read More</a>
+                <h3>Frontend development</h3>
+                <p>Develop user-facing features using HTML, CSS, and JavaScript.
+                    Strong proficiency in HTML, CSS, and JavaScript.
+                    Experience with responsive and adaptive design.
+                    <br><br>
+                </p>
+                <!-- <a href="#" class="btn">Read More</a> -->
             </div>
             <div class="services-box">
                 <i class='bx bx-code-alt'></i>
-                <h3>Web development</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. A distinctio sit repudiandae iure magnam, laudantium expedita incidunt dignissimos eligendi 
-                    accusamus molestias vitae at dolore facilis libero veritatis provident voluptatem! Repellat.</p>
-                <a href="#" class="btn">Read More</a>
+                <h3>Backend development</h3>
+                <p>Develop and maintain server-side applications using Node.js and Express.js.
+                    Understanding of RESTful APIs and web services.
+                    Experience with version control systems, such as Git.
+                    <br><br>
+                </p>
+                <!-- <a href="#" class="btn">Read More</a> -->
             </div>
             <div class="services-box">
                 <i class='bx bx-code-alt'></i>
-                <h3>Web development</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. A distinctio sit repudiandae iure magnam, laudantium expedita incidunt dignissimos eligendi 
-                    accusamus molestias vitae at dolore facilis libero veritatis provident voluptatem! Repellat.</p>
-                <a href="#" class="btn">Read More</a>
+                <h3>MERN development</h3>
+                <p>Develop and maintain full-stack web applications using the MERN stack.
+                    Design and implement user interfaces using React.js.
+                    Experience working with MongoDB or other NoSQL databases
+                </p>
+                <!-- <a href="#" class="btn">Read More</a> -->
             </div>
         </div>
     </section>
@@ -179,31 +189,36 @@
     <section class="contact" id="contact">
         <h2 class="heading">Contact <span>Me!</span></h2>
 
-        <form action="#">
+        <form method="post" action="" name="contact-form">
             <div class="input-box">
-                <input type="text" placeholder="Full name">
-                <input type="email" placeholder="email address">
+                <input type="text" name="Full-name" placeholder="Full name" required>
+                <input type="email" name="Email" placeholder="email address" required>
             </div>
             <div class="input-box">
-                <input type="number" placeholder="Mobile no">
-                <input type="text" placeholder="Subject">
+                <input type="number" name="Mobile" placeholder="Mobile no">
+                <input type="text" name="Subject" placeholder="Subject" required>
             </div>
-            <textarea name="" id="" cols="30" rows="5" placeholder="Your Messsage"></textarea>
+            <textarea name="Messsage" id="" cols="30" rows="5" placeholder="Your Messsage"></textarea>
             <input type="submit" value="Send Messsage" class="btn"> 
         </form>
     </section>
+    
+    <div id="toastBox">
+
+    </div>  
 
     <!-- footer design -->
     <footer class="footer">
         <div class="footer-text">
-            <p><span><marquee
-                direction="left"
-                loop="">Thank You For Visting!😊</marquee></span>Copyright &copy; 2024 by Rohit | All rights Reserverd. </p>
+            <p>Contact No: +91 9673440098 <br> G-mail: rohitkumbhar956@gmail.com</p>
+            <br>
+            <h3>Copyright &copy; 2024 by Rohit | All rights Reserverd. </h3>
         </div>
         <div class="footer-iconTop">
             <a href="#home"><i class='bx bxs-up-arrow-square'></i></a>
         </div>
     </footer>
+    
 
     <!-- scroll reveal -->
     <script src="https://unpkg.com/scrollreveal"></script>

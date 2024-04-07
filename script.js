@@ -132,3 +132,31 @@ ScrollReveal().reveal('.home-content h1, .about-img img, .about-content', {origi
 ScrollReveal().reveal('.home-content h3, .home-content p, .about-brief', {origin: 'right'});
 
 
+let toastBox = document.getElementById('toastBox');
+    let successMsg = '<img src="https://cdn-icons-png.flaticon.com/128/992/992481.png" /> Message Send.';
+
+    function showToast(msg){
+      let toast = document.createElement('div');
+      toast.classList.add('toast');
+      toast.innerHTML = msg;
+      toastBox.appendChild(toast);
+
+      setTimeout(() => {
+        toast.remove();
+      }, 3000);
+    }
+
+
+// google sheet code
+const scriptURL = 'https://script.google.com/macros/s/AKfycbx78T_o9jAKzcXlBGJVfx7Nylwr2Zl6tAAo9EENUl9dHGkhmXoU-t9jeXgGdTJOdqrU/exec';
+
+const form = document.forms['contact-form'];
+
+form.addEventListener('submit', e => {
+    showToast(successMsg);
+    e.preventDefault()
+    fetch(scriptURL, {method: 'POST', body: new FormData(form)})
+    .then(response => response)
+    .then(() => {window.location.reload();})
+    .catch(err => console.error('Error!', err.message))
+})
