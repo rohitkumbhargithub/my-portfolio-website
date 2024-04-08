@@ -14,7 +14,7 @@
 :root {
     --bg-color: #fdfdfd;
     --text-color: #333;
-    --main-color: #754ef9;
+    --main-color: #6440ff;
     --white-color: #fdfdfd;
     --shadow-color: rgba(0, 0, 0, .2);
     transition: 0.5s ease;
@@ -334,6 +334,7 @@ section{
 }
 
 .about-content{
+    text-align: center;
     margin-left: 30px;
     width: 50%;
 }
@@ -884,6 +885,7 @@ span{
         text-align: center;
     }
     .about-img img {
+        align-items: center;
         width: 70vw;
         margin-top: -2rem;
     }
