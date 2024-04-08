@@ -357,7 +357,7 @@ section{
 
 .about-brief{
     height: auto;
-    padding: 2rem;
+    padding: 2.5rem;
     border-radius: 2rem;
     box-shadow: 0 .1rem .5rem var(--shadow-color);
     border-top: .6rem solid var(--main-color);
@@ -373,20 +373,25 @@ section{
 .tab-links {
     font-size: 18px;
     font-weight: 700;
+    padding: 0.5rem;
     cursor: pointer;
     position: relative;
 }
 
 .tab-contents ul li {
+    font-size: 12px;
     list-style: none;
     margin: 10px 0;
 }
 
 .tab-contents ul li span {
     color: var(--main-color);
-    font-size: 14px;
+    font-size: 15px;
 }
 
+.tab-contents:nth-child(3), .tab-contents:nth-child(4), .tab-contents:nth-child(5) {
+    height: 20.4rem;
+}
 
 .tab-contents.active-tab {
     display: block;
@@ -615,7 +620,7 @@ span{
 
 .footer-text p{
     font-size: 1.5rem;
-    color: var(--white-color);
+    color: var(--text-color);
 }
 
 .footer-text h3{
