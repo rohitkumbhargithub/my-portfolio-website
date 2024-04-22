@@ -133,7 +133,7 @@ ScrollReveal().reveal('.home-content h3, .home-content p, .about-brief', {origin
 
 
 let toastBox = document.getElementById('toastBox');
-    let successMsg = '<img src="https://cdn-icons-png.flaticon.com/128/992/992481.png" /> Message Send.';
+    let successMsg = '<img src="https://cdn-icons-png.flaticon.com/128/992/992481.png" /> Message Send Successfully.';
 
     function showToast(msg){
       let toast = document.createElement('div');
