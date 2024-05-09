@@ -3,6 +3,43 @@
 let menuIcon = document.querySelector('#menu-icon');
 let navbar = document.querySelector('.navbar');
 
+const tech = document.getElementById('tech');
+const counters = document.querySelectorAll('.counter');
+let isActived = false;
+
+window.addEventListener('scroll', ()=>{
+    if(scrollY  > tech.offsetTop - tech.offsetHeight - 300 && isActived === false){
+        counters.forEach(counter => {
+            counter.innerText  = 0;
+            let count = 0;
+
+            function updateCount(){
+                const target = parseInt(counter.dataset.count);
+                if(count < target){
+                    count++;
+                    counter.innerText = count;
+                    setTimeout(updateCount, 70);
+                }else{
+                    counter.innerText = target;
+                }
+            }
+            updateCount();
+            isActived = true;
+            counter.style.color = "#00b379";
+
+        }
+    )
+    }else if(scrollY  < tech.offsetTop - tech.offsetHeight - 500 || pageYOffset === 0 && isActived === true){
+        counters.forEach(counter => {
+            counter.innerText  = 0;
+        });
+        isActived = false;
+    }
+}
+);
+
+
+
 menuIcon.onclick = () => {
     menuIcon.classList.toggle('bx-x');
     navbar.classList.toggle('active');
@@ -133,7 +170,7 @@ ScrollReveal().reveal('.home-content h3, .home-content p, .about-brief', {origin
 
 
 let toastBox = document.getElementById('toastBox');
-    let successMsg = '<img src="https://cdn-icons-png.flaticon.com/128/992/992481.png" /> Message Send.';
+    let successMsg = '<img src="https://cdn-icons-gif.flaticon.com/14732/14732010.gif"  /> Thank You, Message Send.';
 
     function showToast(msg){
       let toast = document.createElement('div');

@@ -18,6 +18,9 @@
     --main-color: #6440ff;
     --white-color: #fdfdfd;
     --shadow-color: rgba(0, 0, 0, .2);
+    --linear-color: linear-gradient(to right bottom, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+    --border-color: #00b379;
+    --border2-color: rgb(4, 238, 255);
     transition: 0.5s ease;
 }
 
@@ -76,7 +79,7 @@ body{
     width: 75px;
     height: 75px;
     border: 15px solid var(--shadow-color);
-    border-top-color: var(--main-color);
+    border-top-color: var(--border-color);
     border-radius: 50%;
     animation: loading 0.75s ease infinite;
 }
@@ -110,11 +113,17 @@ body{
 }
 
 .logo{
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-family: "Permanent Marker", cursive;
     color: var(--main-color);
     cursor: default;
     margin-right: auto;
+    margin-bottom: -10px;
+}
+
+.logo img{
+    width: 30px;
+    margin-right: 0.5rem;
 }
 
 /* navbar */
@@ -166,6 +175,7 @@ body{
     font-size: 3.6rem;
     color: var(--text-color);
     display: none;
+    text-align: center;
 }
 
 /* section home */
@@ -223,7 +233,7 @@ section{
 .btn{
     display: inline-block;
     padding: 1.2rem 2.8rem;
-    background: var(--main-color);
+    background: var(--linear-color);
     border-radius: .6rem;
     box-shadow: 0 .2rem .5rem var(--shadow-color);
     font-size: 1.6rem;
@@ -231,12 +241,13 @@ section{
     letter-spacing: .1rem;
     border: .2rem solid transparent;
     font-weight: 500;
+    transition: all 0.5s;
 }
 
 .btn:hover{
     background: transparent;
-    color: var(--main-color);
-    border-color: var(--main-color);
+    color: #00b379;
+    border-color: #00b379;
 }
 
 .home .profession-container{
@@ -306,8 +317,8 @@ section{
     position: absolute;
     bottom: 0;
     right: 0;
-    margin-right: 9rem;
-    width: 40%;
+    margin-right: 5rem;
+    width: 50%;
     pointer-events: none;
 }
 
@@ -321,12 +332,13 @@ section{
 }
 
 .about-container .about-img img{
-    width: 15vh;
+    margin-top: 10px;
+    width: 20vh;
 }
 
 .about-content .about-img img {
-    background: var(--main-color);
-    border-radius: 5%;
+    background: var(--linear-color);
+    border-radius: 0 10% 0 10%;
 }
 
 .heading{
@@ -336,8 +348,11 @@ section{
 
 .about-content{
     text-align: center;
-    margin-left: 30px;
     width: 50%;
+}
+
+.about-brief{
+    margin-left: 2rem;
 }
 
 .about-brief .about-heading{
@@ -351,21 +366,22 @@ section{
     transition: 0.5s ease;
 }
 
-.about-brief .about-heading span.active{
-    color: var(--main-color);
-    border: 2px solid var(--main-color);
-    border-radius: 10px;
-}
-
 .about-brief{
     height: auto;
     padding: 2.5rem;
     border-radius: 2rem;
     box-shadow: 0 .1rem .5rem var(--shadow-color);
-    border-top: .6rem solid var(--main-color);
-    border-bottom: .6rem solid var(--main-color);
+    border-top: .6rem solid var(--border-color);
+    border-bottom: .6rem solid var(--border-color);
     transition: 0.5s ease;
 }
+
+.about-brief .about-heading span.active{
+    color: var(--border-color);
+    border: 2px solid var(--border-color);
+    border-radius: 10px;
+}
+
 
 .info {
     display: flex;
@@ -449,13 +465,13 @@ span{
 
 .services-container .services-box{
     flex: 1 1 30rem;
-    background: var(--bg-color);
+    background: var(--linear-color);
     padding: 3rem 2rem 4rem;
     border-radius: 2rem;
     box-shadow: 0 .1rem .5rem var(--shadow-color);
     text-align: center;
-    border-top: .6rem solid var(--main-color);
-    border-bottom: .6rem solid var(--main-color);
+    border-top: .6rem solid var(--border2-color);
+    border-bottom: .6rem solid var(--border2-color);
     transition: 0.5s ease;
 }
 
@@ -466,16 +482,18 @@ span{
 
 .services-box i{
     font-size: 7rem;
-    color: var(--main-color);
+    color: var(--border-color);
 }
 
 .services-box h3{
     font-size: 2rem;
+    color: var(--white-color);
 }
 
 .services-box p{
     font-size: 1.3rem;
     margin: 1rem 0 3rem;
+    color: var(--white-color);
 }
 
 .portfolio-box img{
@@ -502,7 +520,7 @@ span{
     position: relative;
     display: flex;
     border-radius: 2rem;
-    box-shadow: 0 0 1rem rgba(0, 0, 0, .1);
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
     overflow: hidden;
 }
 
@@ -622,20 +640,17 @@ span{
     align-items: center;
     flex-wrap: wrap;
     padding: 2rem 7%;
-    background: var(--main-color);
+    background: var(--linear-color);
 }
 
 .footer-text p{
     font-size: 1.5rem;
-    color: var(--text-color);
+    color: var(--white-color);
 }
 
 .footer-text h3{
     font-weight: 300;
-}
-
-.footer-text h3{
-    font-weight: 300;
+    color: white;
 }
 
 .footer-iconTop a {
@@ -688,7 +703,7 @@ span{
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
     display: flex;
     align-items: center;
-    border-right: 5px solid var(--main-color);
+    border-right: 5px solid var(--border-color);
     border-radius: 5px;
     transition: all 0.5s;
   }
@@ -703,7 +718,7 @@ span{
     bottom: 0;
     width: 100%;
     height: 5px;
-    background: var(--main-color);
+    background: var(--linear-color);
     border-radius: 5px;
     animation: animate 3s linear forwards;
   }
@@ -733,7 +748,8 @@ span{
 
     .home-img img{
         top: 0;
-        margin-top: 16rem;
+        margin-top: 4rem;
+        width: 45%;
     }
    
 }
@@ -747,9 +763,15 @@ span{
     }
     .home .profession-container .profession-box{
         right: -22rem;
+        font-size: 20px;
     }
     .home .profession-container .overlay{
         right: -15rem;
+    }
+    .home-img img{
+        margin-top: 8rem;
+        margin-right: 1rem;
+        width: 50%;
     }
 }
 
@@ -765,7 +787,8 @@ span{
         text-align: center;
     }
     .home-img img{
-        display: none;
+        display: flex;
+        flex-direction: column;
     }
     .services,
     .portfolio {
@@ -800,6 +823,7 @@ span{
         border-top: .1rem solid rgba(0, 0, 0, .2);
         box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
         display: none;
+        transition: all 0.5s;
     }
     .navbar.active{
         display: block;
@@ -809,6 +833,7 @@ span{
         font-size: 2rem;
         margin: 3rem 0;
         color: var(--text-color);
+        text-align: center;
     }
     .navbar a:nth-child(1),
     .navbar a:nth-child(2) {
@@ -902,6 +927,9 @@ span{
     .portfolio .portfolio-container {
         grid-template-columns: repeat(2, 1fr);
     }
+    .home-img img{
+        display: none;
+    }
 }
 
 @media (max-width: 617px) {
@@ -911,6 +939,12 @@ span{
 }
 
 @media (max-width: 450px) {
+    body{
+        width: 100vw;
+    }
+    .header{
+        width: 80vw;
+    }
     html {
         font-size: 50%;
     }
@@ -947,14 +981,20 @@ span{
       img {
         width: 20px;
       }
+      .about-brief{
+        margin-left: 0;
+    }
 }
 
 @media (max-width: 365px) {
+    body{
+        width: 100vw;
+    }
     .about-img img {
-        width: 90vw;
+        width: 100vw;
     }
     section{
-        width: 100%;
+        width: 100vw;
     }
 
     .about-brief .about-heading span{
@@ -966,7 +1006,7 @@ span{
     }
 
     .header{
-        width: 85%;
+        width: 100vw;
     }
     .footer {
         flex-direction: column-reverse;
@@ -974,5 +1014,11 @@ span{
     .footer p {
         text-align: center;
         margin-top: 2rem;
+    }
+}
+
+@media (max-width: 300px) {
+    section{
+        width: 100%;
     }
 }
