@@ -119,6 +119,7 @@ body{
     cursor: default;
     margin-right: auto;
     margin-bottom: -10px;
+    cursor: pointer;
 }
 
 .logo img{
