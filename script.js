@@ -157,9 +157,9 @@ window.addEventListener('load', () => {
 ScrollReveal(
     { 
         reset: true,
-        distance: '80px',
-        duration: 2000,
-        dealy: 200
+        distance: '10px',
+        duration: 2500,
+        dealy: 300
     } 
 );
 

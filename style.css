@@ -939,6 +939,7 @@ span{
     }
 }
 
+
 @media (max-width: 450px) {
     body{
         width: 100vw;
@@ -971,7 +972,7 @@ span{
         width: 100%;
     }
     #toastBox{
-        right: 50px;
+        right: 20px;
     }
     .toast{
         position: relative;
@@ -987,7 +988,7 @@ span{
     }
 }
 
-@media (max-width: 365px) {
+@media (max-width: 360px) {
     body{
         width: 100vw;
     }
@@ -1005,7 +1006,9 @@ span{
     .about-brief .tab-contents ul li span{
         font-size: 1.8rem;
     }
-
+    #toastBox{
+        right: 1px;
+    }
     .header{
         width: 100vw;
     }
