@@ -1008,6 +1008,7 @@ span{
     }
     #toastBox{
         right: 1px;
+        margin-top: 33px;
     }
     .header{
         width: 100vw;
