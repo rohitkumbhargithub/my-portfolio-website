@@ -24,6 +24,20 @@
     transition: 0.5s ease;
 }
 
+::-webkit-scrollbar {
+    width: 8px; 
+}
+
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(45deg, #6c63ff, #9100d4);
+    border-radius: 8px; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(45deg, #5a56d6, #00a6c4); 
+}
+
 
 /* dark mode */
 
@@ -354,6 +368,10 @@ section{
 
 .about-brief{
     margin-left: 2rem;
+    height: 400px; /* Set a fixed height */
+    overflow-y: auto; /* Enable vertical scrolling */
+    overflow-x: hidden; /* Disable horizontal scrolling */
+    scroll-behavior: smooth;
 }
 
 .about-brief .about-heading{
@@ -418,7 +436,20 @@ section{
 
 .tab-contents {
     display: none;
+    max-height: 300px; /* Restrict the height to create scrolling */
+    overflow-y: auto; /* Enable vertical scrolling */
+    padding: 10px; 
 }
+
+.about-brief::-webkit-scrollbar, .tab-contents::-webkit-scrollbar {
+    width: 8px; /* Width of the scrollbar */
+}
+
+.about-brief:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow on hover */
+    transform: scale(1.01); /* Slight zoom */
+}
+
 
 .tab-contents .company {
     display: flex;
