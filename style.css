@@ -15,11 +15,11 @@
 :root {
     --bg-color: #fdfdfd;
     --text-color: #333;
-    --main-color: #6440ff;
+    --main-color: #0dc7ce;
     --white-color: #fdfdfd;
     --shadow-color: rgba(0, 0, 0, .2);
     --linear-color: linear-gradient(to right bottom, #051937, #004d7a, #008793, #00bf72, #a8eb12);
-    --border-color: #00b379;
+    --border-color: #9c1ac4;
     --border2-color: rgb(4, 238, 255);
     transition: 0.5s ease;
 }
@@ -418,7 +418,17 @@ section{
 
 .tab-contents {
     display: none;
+}
 
+.tab-contents .company {
+    display: flex;
+    align-items: center;
+}
+
+.tab-contents .company img {
+    width: 50px;
+    margin-top: 2px;
+    border-radius: 50px;
 }
 
 .about-content h2{
@@ -444,6 +454,8 @@ span{
     font-size: 1.4rem;
     padding: 0 .7rem;
 }
+
+
 
 /* section services */
 
