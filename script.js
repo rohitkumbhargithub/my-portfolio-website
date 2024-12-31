@@ -183,6 +183,20 @@ let toastBox = document.getElementById('toastBox');
       }, 3000);
     }
 
+const startDate = new Date(2024, 9);
+const currentDate = new Date();
+const monthsDifference =
+      currentDate.getFullYear() * 12 +
+      currentDate.getMonth() -
+      (startDate.getFullYear() * 12 + startDate.getMonth());
+
+    const formattedStartDate = startDate.toLocaleString('en-US', {
+      month: 'short',
+      year: 'numeric',
+    });
+
+    const displayText = `${formattedStartDate} - Present (${monthsDifference} months)`;
+    document.getElementById('date-display').textContent = displayText;
 
 // google sheet code
 const scriptURL = 'https://script.google.com/macros/s/AKfycbx78T_o9jAKzcXlBGJVfx7Nylwr2Zl6tAAo9EENUl9dHGkhmXoU-t9jeXgGdTJOdqrU/exec';

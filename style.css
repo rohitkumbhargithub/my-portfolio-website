@@ -454,6 +454,16 @@ section{
 .tab-contents .company {
     display: flex;
     align-items: center;
+    padding: 2px;
+    border-radius: 5px;
+    background-color: rebeccapurple;
+}
+
+#education ul li span {
+    color: var(--white-color);
+    padding: 2px;
+    border-radius: 5px;
+    background-color: rebeccapurple;
 }
 
 .tab-contents .company img {
