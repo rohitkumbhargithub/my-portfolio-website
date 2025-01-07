@@ -426,6 +426,10 @@ section{
     font-size: 15px;
 }
 
+.tab-contents .company p {
+    color: white;
+}
+
 .tab-contents:nth-child(3), .tab-contents:nth-child(4), .tab-contents:nth-child(5) {
     height: 20.4rem;
 }
